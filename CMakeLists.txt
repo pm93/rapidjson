@@ -196,7 +196,7 @@ install(FILES readme.md
 add_library(RapidJSON INTERFACE)
 
 #target_include_directories(RapidJSON INTERFACE $<INSTALL_INTERFACE:include>)
-target_include_directories(RapidJSON INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(RapidJSON INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 install(DIRECTORY include/rapidjson
     DESTINATION "${INCLUDE_INSTALL_DIR}"
